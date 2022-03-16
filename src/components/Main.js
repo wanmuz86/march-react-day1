@@ -1,5 +1,5 @@
 import react, {useState} from 'react';
-
+import Counter from './Counter';
 function Main() {
 
     const [name,setName] = useState("Wan");
@@ -16,6 +16,9 @@ function Main() {
         <p>My name is {name}</p>
         <p>I am {age} years old</p>
         <button onClick={ buttonClick}>Click me!</button>
+
+        <hr/>
+        <Counter/>
         </main>
     );
 }
